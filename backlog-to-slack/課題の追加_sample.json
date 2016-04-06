@@ -1,0 +1,85 @@
+{
+    "created": "2016-04-05T10:51:49Z",
+    "project": {
+        "archived": false,
+        "projectKey": "TEST",
+        "name": "TestProject",
+        "chartEnabled": false,
+        "id": 100,
+        "subtaskingEnabled": false
+    },
+    "id": 10,
+    "type": 1,
+    "content": {
+        "summary": "test issue",
+        "key_id": 100,
+        "customFields": [],
+        "dueDate": "",
+        "description": "test description",
+        "priority": {
+            "name": "",
+            "id": null
+        },
+        "resolution": {
+            "name": "",
+            "id": null
+        },
+        "actualHours": null,
+        "issueType": {
+            "color": "null",
+            "name": "Bug",
+            "displayOrder": null,
+            "id": 400,
+            "projectId": null
+        },
+        "milestone": [
+            {
+                "archived": "false",
+                "releaseDueDate": "null",
+                "name": "prototype release",
+                "displayOrder": null,
+                "description": "",
+                "id": null,
+                "projectId": null,
+                "startDate": "null"
+            }
+        ],
+        "versions": [
+            {
+                "archived": "false",
+                "releaseDueDate": "null",
+                "name": "Version0.1",
+                "displayOrder": null,
+                "description": "",
+                "id": null,
+                "projectId": null,
+                "startDate": "null"
+            }
+        ],
+        "parentIssueId": null,
+        "estimatedHours": null,
+        "id": 100,
+        "assignee": null,
+        "category": [
+            {
+                "name": "Category1",
+                "displayOrder": null,
+                "id": null
+            }
+        ],
+        "startDate": "",
+        "status": {
+            "name": "In Progress",
+            "id": 2
+        }
+    },
+    "notifications": [],
+    "createdUser": {
+        "nulabAccount": null,
+        "name": "backlog_user",
+        "mailAddress": null,
+        "id": xxxxx,
+        "roleType": 1,
+        "userId": null
+    }
+}
