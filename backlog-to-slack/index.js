@@ -9,11 +9,11 @@ exports.handler = function(event, context) {
     var label = '';
     switch (type) {
         case '1':
-            label = '課題の追加';
+            label = '追加';
             break;
         case '2':
         case '3':
-            label = '課題の更新';
+            label = '更新';
             break;
     }
 
@@ -32,8 +32,8 @@ exports.handler = function(event, context) {
     var url = 'https://<your backlog domain>.backlog.jp/view/' + pjKey + '-' + key;
     // message 本文作成
     var message = createdUser + 'が、' +
-                  '課題 \'' + title + '\' を' +
-                  (type == '1' ? '追加' : '更新') + 'したみたいでゲソ。確認するでゲソ。:squid:\n';
+                  '課題 \'' + title + '\' を' + label +
+                  'したみたいでゲソ。確認するでゲソ。:squid:\n';
     message += url;
     if (type == '1') {
         var issueType = content.issueType.name;
@@ -46,6 +46,7 @@ exports.handler = function(event, context) {
         message += '期限  : ' + dueDt;
     }
 
+    // POSTデータ作成
     var payload = 'payload={' +
                         '"text": "' + message + '",' +
                         '"channel": "' + channel + '",' +
