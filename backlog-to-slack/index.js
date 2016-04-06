@@ -1,8 +1,8 @@
 var request = require('request');
 
-var slackApi = 'https://hooks.slack.com/services/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';
-var channel = '#bklog-aws-req';
-var botName = 'backlog-bot';
+var slackApi = '<your slack api>';
+var channel = '<target channel>';
+var botName = '<bot name>';
 
 exports.handler = function(event, context) {
     var type = JSON.stringify(event.type);
@@ -29,7 +29,7 @@ exports.handler = function(event, context) {
     var title = content.summary;
 
     // 課題のUR
-    var url = 'https://creative-m.backlog.jp/view/' + pjKey + '-' + key;
+    var url = 'https://<your backlog domain>.backlog.jp/view/' + pjKey + '-' + key;
     // message 本文作成
     var message = createdUser + 'が、' +
                   '課題 \'' + title + '\' を' +
